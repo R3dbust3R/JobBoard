@@ -9,6 +9,9 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/job-listing', [JobListingController::class, 'index'])->name('job-listing.index');
+Route::get('/job-listing/{jobListing}', [JobListingController::class, 'show'])->name('job-listing.show');
+
+Route::get('/search/{query}', [JobListingController::class, 'search'])->name('job-listing.search');
 Route::get('/employers', [EmployerController::class, 'index'])->name('employer.index');
 Route::get('/user/profile', [UserController::class, 'profile'])->name('user.profile');
 Route::get('/user/settings', [UserController::class, 'settings'])->name('user.settings');

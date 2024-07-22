@@ -5,3 +5,16 @@
 .section-padding {
     @apply py-12;
 }
+
+.search-btn {
+    @apply rounded-e-2xl px-8 py-4 uppercase text-sm tracking-tighter font-bold bg-gray-950 text-gray-500 transition-all duration-200 hover:px-12;
+}
+.search-input {
+    @apply rounded-s-2xl w-full px-8 p-4 bg-gray-800 text-gray-400 focus:outline-none;
+}
+.search-results {
+    @apply container mx-auto max-w-2xl bg-gray-950 px-3 mt-1 rounded-xl;
+}
+.search-result {
+    @apply block text-gray-500 capitalize px-4 py-[2px] rounded-lg transition-all duration-300 hover:bg-gray-900;
+}

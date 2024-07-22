@@ -1,5 +1,21 @@
 <x-layout title="Home" page="home">
 
+{{-- search --}}
+<section class="section-padding relative">
+    <div class="container mx-auto">
+        <form action="#" method="GET">
+            <div class="max-w-2xl mx-auto flex justify-center">
+                <input id="search-input" class="search-input" type="text" placeholder="Search For Jobs" name="query">
+                <button class="search-btn" type="submit">
+                    Search
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="search-results" id="search-results"></div>
+</section>
+{{-- search --}}
+
 {{-- latets employers --}}
 <section class="latest-employers section-padding">
     <div class="container mx-auto">
